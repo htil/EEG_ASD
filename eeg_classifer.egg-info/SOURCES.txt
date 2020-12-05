@@ -1,0 +1,6 @@
+setup.py
+eeg_classifer.egg-info/PKG-INFO
+eeg_classifer.egg-info/SOURCES.txt
+eeg_classifer.egg-info/dependency_links.txt
+eeg_classifer.egg-info/top_level.txt
+eeg_classifier/__init__.py

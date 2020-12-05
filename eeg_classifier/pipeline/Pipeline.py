@@ -16,6 +16,7 @@ from scipy.integrate import simps
 
 from EEGRecording import EEGRecording
 from utils import visualize
+# from Pipeline import Pipeline
 
 ### CONFIGURATION ###
 dir = Path('.')  # directory for eeg_asd data
