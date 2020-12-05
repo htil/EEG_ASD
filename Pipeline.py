@@ -16,7 +16,6 @@ from scipy.integrate import simps
 
 from EEGRecording import EEGRecording
 from utils import visualize
-# from Pipeline import Pipeline
 
 ### CONFIGURATION ###
 dir = Path('.')  # directory for eeg_asd data
@@ -159,3 +158,11 @@ class Pipeline:
         return self.pipeline[recording_number].data[epoch_number][chanel_number][band_number]
 
     # Spectrogram...
+
+        pipeline = Pipeline()
+        pipeline.load_data('./raw_data')
+        pipeline.find_common_chanels()
+        pipeline.save_state('step3')
+        pipeline.split_into_epochs()
+        pipeline.reject_bad_epochs(low=.8, high=1.2)
+        pipeline.do_welch_powerband()
